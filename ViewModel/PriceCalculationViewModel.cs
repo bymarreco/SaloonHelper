@@ -3,6 +3,7 @@ namespace SaloonHelper.ViewModel
     public class PriceCalculationViewModel
     {
         public double InitialPrice { get; set; }
+        public double Increase { get; set; }
         public double DezPorCento { get; set; }
         public double VintePorCento { get; set; }
         public double TrintaPorCento { get; set; }

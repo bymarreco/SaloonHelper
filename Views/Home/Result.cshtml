@@ -1,0 +1,76 @@
+@model SaloonHelper.ViewModel.PriceCalculationViewModel
+
+@{
+    ViewData["Title"] = "Resultado";
+}
+
+<h1>Resultado</h1>
+
+<form asp-controller="home" asp-action="calculate" method="post">
+    <div class="form-group row">
+        <label asp-for="InitialPrice" class="col-sm-2 col-form-label">Valor Inicial</label>
+        <div class="col-sm-10">
+            <input asp-for="InitialPrice" class="form-control" readonly="readonly" placeholder="Valor Inicial" value="@Model.InitialPrice" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="DezPorCento" class="col-sm-2 col-form-label">Dez por Cento</label>
+        <div class="col-sm-10">
+            <input asp-for="DezPorCento" class="form-control" readonly="readonly" placeholder="Dez por Cento" value="@Model.DezPorCento" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="VintePorCento" class="col-sm-2 col-form-label">Vinte por Cento</label>
+        <div class="col-sm-10">
+            <input asp-for="VintePorCento" class="form-control" readonly="readonly" placeholder="Vinte por Cento" value="@Model.VintePorCento" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="TrintaPorCento" class="col-sm-2 col-form-label">Trinta por Cento</label>
+        <div class="col-sm-10">
+            <input asp-for="TrintaPorCento" class="form-control" readonly="readonly" placeholder="Trinta por Cento" value="@Model.TrintaPorCento" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="QuarentaPorCento" class="col-sm-2 col-form-label">Quarenta por Cento</label>
+        <div class="col-sm-10">
+            <input asp-for="QuarentaPorCento" class="form-control" readonly="readonly" placeholder="Quarenta por Cento" value="@Model.QuarentaPorCento" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="CinquentaPorCento" class="col-sm-2 col-form-label">Cinquenta por Cento</label>
+        <div class="col-sm-10">
+            <input asp-for="CinquentaPorCento" class="form-control" readonly="readonly" placeholder="Cinquenta por Cento" value="@Model.CinquentaPorCento" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="SessentaPorCento" class="col-sm-2 col-form-label">Sessenta por Cento</label>
+        <div class="col-sm-10">
+            <input asp-for="SessentaPorCento" class="form-control" readonly="readonly" placeholder="Sessenta por Cento" value="@Model.SessentaPorCento" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="SetentaPorCento" class="col-sm-2 col-form-label">Setenta por Cento</label>
+        <div class="col-sm-10">
+            <input asp-for="SetentaPorCento" class="form-control" readonly="readonly" placeholder="Setenta por Cento"value="@Model.SetentaPorCento" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="OitentaPorCento" class="col-sm-2 col-form-label">Oitenta por Cento</label>
+        <div class="col-sm-10">
+            <input asp-for="OitentaPorCento" class="form-control" readonly="readonly" placeholder="Oitenta por Cento"value="@Model.OitentaPorCento" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="NoventaPorCento" class="col-sm-2 col-form-label">Noventa por Cento</label>
+        <div class="col-sm-10">
+            <input asp-for="NoventaPorCento" class="form-control" readonly="readonly" placeholder="Noventa por Cento"value="@Model.NoventaPorCento" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="CemPorCento" class="col-sm-2 col-form-label">Cem por Cento</label>
+        <div class="col-sm-10">
+            <input asp-for="CemPorCento" class="form-control" readonly="readonly" placeholder="Cem por Cento"value="@Model.CemPorCento" />
+        </div>
+    </div>
+</form>

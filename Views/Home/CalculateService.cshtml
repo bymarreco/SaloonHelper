@@ -1,0 +1,34 @@
+@model SaloonHelper.ViewModel.ServicePriceCalculationViewModel
+
+@{
+    ViewData["Title"] = "Calculate Product Price";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Precificação de Serviços</label>
+            <input type="text" class="form-control" placeholder="Valor do Serviço">
+        </div>
+        <div class="form-group col-md-6">
+            <label>Rateio</label>
+            <input type="text" class="form-control" placeholder="valor do Rateio em %">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label>Taxa de Cartão</label>
+            <input type="text" class="form-control" placeholder="Taxa de Cartão">
+        </div>
+        <div class="form-group col-md-4">
+            <label>Desconto Toalha</label>
+            <input type="text" class="form-control" placeholder="Custo com Toalha">
+        </div>
+        <div class="form-group col-md-4">
+            <label>Desconto de Produtos</label>
+            <input type="text" class="form-control" placeholder="Custo com Cartão">
+        </div>
+    </div>
+</form>

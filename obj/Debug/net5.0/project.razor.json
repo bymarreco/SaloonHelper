@@ -15618,6 +15618,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Marreco\\Desktop\\Exercicios-js\\SaloonHelper\\Views\\Home\\CalculateService.cshtml",
+      "TargetPath": "Views\\Home\\CalculateService.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Marreco\\Desktop\\Exercicios-js\\SaloonHelper\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"

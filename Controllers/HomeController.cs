@@ -41,9 +41,9 @@ namespace SaloonHelper.Controllers
         }
 
         [HttpPost]
-        public IActionResult CalculateProduct(PriceCalculationViewModel model)
+        public IActionResult CalculateProduct(ProductPriceCalculationViewModel model)
         {
-                PriceCalculationViewModel product = new PriceCalculationViewModel
+                ProductPriceCalculationViewModel product = new ProductPriceCalculationViewModel
                 {
                     InitialPrice = Math.Round((model.InitialPrice),2,MidpointRounding.ToEven),
                     DezPorCento= Math.Round((model.InitialPrice*1.1),2,MidpointRounding.ToEven),
@@ -76,6 +76,17 @@ namespace SaloonHelper.Controllers
                 
             }
             return View("Result",product);
+        }
+
+        public IActionResult CalculateService()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult CalculateService(ServicePriceCalculationViewModel model)
+        {
+            return View();
         }
     }
 }

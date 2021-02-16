@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace SaloonHelper.ViewModel
 {
-    public class PriceCalculationViewModel
+    public class ProductPriceCalculationViewModel
     {
         [Display(Name = "Preço de Custo")]
         public double InitialPrice { get; set; }

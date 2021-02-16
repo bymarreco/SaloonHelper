@@ -23,7 +23,6 @@ C:\Users\Marreco\Desktop\Exercicios-js\SaloonHelper\obj\Debug\net5.0\scopedcss\b
 C:\Users\Marreco\Desktop\Exercicios-js\SaloonHelper\obj\Debug\net5.0\SaloonHelper.TagHelpers.input.cache
 C:\Users\Marreco\Desktop\Exercicios-js\SaloonHelper\obj\Debug\net5.0\SaloonHelper.TagHelpers.output.cache
 C:\Users\Marreco\Desktop\Exercicios-js\SaloonHelper\obj\Debug\net5.0\SaloonHelper.RazorCoreGenerate.cache
-C:\Users\Marreco\Desktop\Exercicios-js\SaloonHelper\obj\Debug\net5.0\Razor\Views\Home\Calculate.cshtml.g.cs
 C:\Users\Marreco\Desktop\Exercicios-js\SaloonHelper\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Marreco\Desktop\Exercicios-js\SaloonHelper\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Marreco\Desktop\Exercicios-js\SaloonHelper\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
@@ -41,3 +40,5 @@ C:\Users\Marreco\Desktop\Exercicios-js\SaloonHelper\obj\Debug\net5.0\SaloonHelpe
 C:\Users\Marreco\Desktop\Exercicios-js\SaloonHelper\obj\Debug\net5.0\SaloonHelper.csproj.CopyComplete
 C:\Users\Marreco\Desktop\Exercicios-js\SaloonHelper\obj\Debug\net5.0\Razor\Views\Home\Result.cshtml.g.cs
 C:\Users\Marreco\Desktop\Exercicios-js\SaloonHelper\obj\Debug\net5.0\Razor\Views\Home\CompleteResult.cshtml.g.cs
+C:\Users\Marreco\Desktop\Exercicios-js\SaloonHelper\obj\Debug\net5.0\Razor\Views\Home\CalculateProduct.cshtml.g.cs
+C:\Users\Marreco\Desktop\Exercicios-js\SaloonHelper\obj\Debug\net5.0\Razor\Views\Home\CalculateService.cshtml.g.cs

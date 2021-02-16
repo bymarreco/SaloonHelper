@@ -1,0 +1,74 @@
+@model SaloonHelper.ViewModel.PriceCalculationViewModel
+
+@{
+    ViewData["Title"] = "Resultado";
+}
+
+<h1>Resultado</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Normal Price</th>
+            <th scope="col">Increased Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">@Html.DisplayNameFor(model => model.InitialPrice)</th>
+            <td>@Html.DisplayFor(Model=>Model.InitialPrice)</td>
+            <td>@Html.DisplayFor(Model=>Model.NewInitialPrice)</td>
+        </tr>
+        <tr>
+            <th scope="row">@Html.DisplayNameFor(model => model.DezPorCento)</th>
+            <td>@Html.DisplayFor(model => model.DezPorCento)</td>
+            <td>@Html.DisplayFor(model => model.NewDezPorCento)</td>
+        </tr>
+        <tr>
+            <th scope="row">@Html.DisplayNameFor(model => model.VintePorCento)</th>
+            <td>@Html.DisplayFor(model => model.VintePorCento)</td>
+            <td>@Html.DisplayFor(model => model.NewVintePorCento)</td>
+        </tr>
+        <tr>
+            <th scope="row">@Html.DisplayNameFor(model => model.TrintaPorCento)</th>
+            <td>@Html.DisplayFor(model => model.TrintaPorCento)</td>
+            <td>@Html.DisplayFor(model => model.NewTrintaPorCento)</td>
+        </tr>
+        <tr>
+            <th scope="row">@Html.DisplayNameFor(model => model.QuarentaPorCento)</th>
+            <td>@Html.DisplayFor(model => model.QuarentaPorCento)</td>
+            <td>@Html.DisplayFor(model => model.NewQuarentaPorCento)</td>
+        </tr>
+        <tr>
+            <th scope="row">@Html.DisplayNameFor(model => model.CinquentaPorCento)</th>
+            <td>@Html.DisplayFor(model => model.CinquentaPorCento)</td>
+            <td>@Html.DisplayFor(model => model.NewCinquentaPorCento)</td>
+        </tr>
+        <tr>
+            <th scope="row">@Html.DisplayNameFor(model => model.SessentaPorCento)</th>
+            <td>@Html.DisplayFor(model => model.SessentaPorCento)</td>
+            <td>@Html.DisplayFor(model => model.NewSessentaPorCento)</td>
+        </tr>
+        <tr>
+            <th scope="row">@Html.DisplayNameFor(model => model.SetentaPorCento)</th>
+            <td>@Html.DisplayFor(model => model.SetentaPorCento)</td>
+            <td>@Html.DisplayFor(model => model.NewSetentaPorCento)</td>
+        </tr>
+        <tr>
+            <th scope="row">@Html.DisplayNameFor(model => model.OitentaPorCento)</th>
+            <td>@Html.DisplayFor(model => model.OitentaPorCento)</td>
+            <td>@Html.DisplayFor(model => model.NewOitentaPorCento)</td>
+        </tr>
+        <tr>
+            <th scope="row">@Html.DisplayNameFor(model => model.NoventaPorCento)</th>
+            <td>@Html.DisplayFor(model => model.NoventaPorCento)</td>
+            <td>@Html.DisplayFor(model => model.NewNoventaPorCento)</td>
+        </tr>
+        <tr>
+            <th scope="row">@Html.DisplayNameFor(model => model.CemPorCento)</th>
+            <td>@Html.DisplayFor(model => model.CemPorCento)</td>
+            <td>@Html.DisplayFor(model => model.NewCemPorCento)</td>
+        </tr>
+    </tbody>
+</table>

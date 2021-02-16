@@ -40,3 +40,4 @@ C:\Users\Marreco\Desktop\Exercicios-js\SaloonHelper\obj\Debug\net5.0\SaloonHelpe
 C:\Users\Marreco\Desktop\Exercicios-js\SaloonHelper\obj\Debug\net5.0\SaloonHelper.genruntimeconfig.cache
 C:\Users\Marreco\Desktop\Exercicios-js\SaloonHelper\obj\Debug\net5.0\SaloonHelper.csproj.CopyComplete
 C:\Users\Marreco\Desktop\Exercicios-js\SaloonHelper\obj\Debug\net5.0\Razor\Views\Home\Result.cshtml.g.cs
+C:\Users\Marreco\Desktop\Exercicios-js\SaloonHelper\obj\Debug\net5.0\Razor\Views\Home\CompleteResult.cshtml.g.cs

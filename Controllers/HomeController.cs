@@ -35,33 +35,14 @@ namespace SaloonHelper.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public IActionResult Calculate()
+        public IActionResult CalculateProduct()
         {
             return View();
         }
 
         [HttpPost]
-        public IActionResult Calculate(PriceCalculationViewModel model)
+        public IActionResult CalculateProduct(PriceCalculationViewModel model)
         {
-            if(model.Increase != 0){
-                PriceCalculationViewModel product = new PriceCalculationViewModel
-                {
-                    InitialPrice = Math.Round((model.InitialPrice + model.Increase),2,MidpointRounding.ToEven),
-                    DezPorCento= Math.Round(((model.InitialPrice + model.Increase)*1.1),2,MidpointRounding.ToEven),
-                    VintePorCento = Math.Round(((model.InitialPrice + model.Increase)*1.2),2,MidpointRounding.ToEven),
-                    TrintaPorCento = Math.Round(((model.InitialPrice + model.Increase)*1.3),2,MidpointRounding.ToEven),
-                    QuarentaPorCento = Math.Round(((model.InitialPrice + model.Increase)*1.4),2,MidpointRounding.ToEven),
-                    CinquentaPorCento = Math.Round(((model.InitialPrice + model.Increase)*1.5),2,MidpointRounding.ToEven),
-                    SessentaPorCento = Math.Round(((model.InitialPrice + model.Increase)*1.6),2,MidpointRounding.ToEven),
-                    SetentaPorCento = Math.Round(((model.InitialPrice + model.Increase)*1.7),2,MidpointRounding.ToEven),
-                    OitentaPorCento = Math.Round(((model.InitialPrice + model.Increase)*1.8),2,MidpointRounding.ToEven),
-                    NoventaPorCento = Math.Round(((model.InitialPrice + model.Increase)*1.9),2,MidpointRounding.ToEven),
-                    CemPorCento = Math.Round(((model.InitialPrice + model.Increase)*2),2,MidpointRounding.ToEven) 
-                };
-
-                return View("Result", product);
-                
-            }else{
                 PriceCalculationViewModel product = new PriceCalculationViewModel
                 {
                     InitialPrice = Math.Round((model.InitialPrice),2,MidpointRounding.ToEven),
@@ -74,11 +55,27 @@ namespace SaloonHelper.Controllers
                     SetentaPorCento = Math.Round((model.InitialPrice*1.7),2,MidpointRounding.ToEven),
                     OitentaPorCento = Math.Round((model.InitialPrice*1.8),2,MidpointRounding.ToEven),
                     NoventaPorCento = Math.Round((model.InitialPrice*1.9),2,MidpointRounding.ToEven),
-                    CemPorCento = Math.Round((model.InitialPrice*2),2,MidpointRounding.ToEven) 
+                    CemPorCento = Math.Round((model.InitialPrice*2),2,MidpointRounding.ToEven)
+                };
+            if(model.Increase != 0){
+                {
+                    product.NewInitialPrice = Math.Round((model.InitialPrice + model.Increase),2,MidpointRounding.ToEven);
+                    product.NewDezPorCento= Math.Round(((model.InitialPrice + model.Increase)*1.1),2,MidpointRounding.ToEven);
+                    product.NewVintePorCento = Math.Round(((model.InitialPrice + model.Increase)*1.2),2,MidpointRounding.ToEven);
+                    product.NewTrintaPorCento = Math.Round(((model.InitialPrice + model.Increase)*1.3),2,MidpointRounding.ToEven);
+                    product.NewQuarentaPorCento = Math.Round(((model.InitialPrice + model.Increase)*1.4),2,MidpointRounding.ToEven);
+                    product.NewCinquentaPorCento = Math.Round(((model.InitialPrice + model.Increase)*1.5),2,MidpointRounding.ToEven);
+                    product.NewSessentaPorCento = Math.Round(((model.InitialPrice + model.Increase)*1.6),2,MidpointRounding.ToEven);
+                    product.NewSetentaPorCento = Math.Round(((model.InitialPrice + model.Increase)*1.7),2,MidpointRounding.ToEven);
+                    product.NewOitentaPorCento = Math.Round(((model.InitialPrice + model.Increase)*1.8),2,MidpointRounding.ToEven);
+                    product.NewNoventaPorCento = Math.Round(((model.InitialPrice + model.Increase)*1.9),2,MidpointRounding.ToEven);
+                    product.NewCemPorCento = Math.Round(((model.InitialPrice + model.Increase)*2),2,MidpointRounding.ToEven);
                 };
 
-                return View("Result", product);
+                return View("CompleteResult", product);
+                
             }
+            return View("Result",product);
         }
     }
 }

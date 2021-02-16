@@ -15603,18 +15603,23 @@
   "RootNamespace": "SaloonHelper",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\Marreco\\Desktop\\Exercicios-js\\SaloonHelper\\Views\\Home\\CompleteResult.cshtml",
+      "TargetPath": "Views\\Home\\CompleteResult.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Marreco\\Desktop\\Exercicios-js\\SaloonHelper\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Marreco\\Desktop\\Exercicios-js\\SaloonHelper\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\Marreco\\Desktop\\Exercicios-js\\SaloonHelper\\Views\\Home\\CalculateProduct.cshtml",
+      "TargetPath": "Views\\Home\\CalculateProduct.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Marreco\\Desktop\\Exercicios-js\\SaloonHelper\\Views\\Home\\Calculate.cshtml",
-      "TargetPath": "Views\\Home\\Calculate.cshtml",
+      "FilePath": "c:\\Users\\Marreco\\Desktop\\Exercicios-js\\SaloonHelper\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -15648,6 +15648,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Marreco\\Desktop\\Exercicios-js\\SaloonHelper\\Views\\Home\\ResultService.cshtml",
+      "TargetPath": "Views\\Home\\ResultService.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Marreco\\Desktop\\Exercicios-js\\SaloonHelper\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"

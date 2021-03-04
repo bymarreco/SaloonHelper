@@ -7,5 +7,6 @@ namespace SaloonHelper.Models
         public double TaxaCartao { get; set; }
         public double DescontoToalha { get; set; }
         public double DescontoProdutos { get; set; }
+        public bool DescontarTaxaAntes { get; set; }
     }
 }

@@ -86,7 +86,34 @@ namespace SaloonHelper.Controllers
         [HttpPost]
         public IActionResult CalculateService(ServicePriceCalculationViewModel model)
         {
-            return View();
+            ServicePriceCalculationViewModel service = new ServicePriceCalculationViewModel
+            {
+                ServicePrice = model.ServicePrice,
+                Rateio = model.Rateio,
+                TaxaCartao = model.TaxaCartao,
+                DescontoToalha = model.DescontoToalha,
+                DescontoProdutos = model.DescontoProdutos,
+                DescontarTaxaAntes = model.DescontarTaxaAntes
+            };
+            var porcentagemRateio = service.Rateio/100;
+            var porcentagemCartao = service.TaxaCartao/100;
+            service.TaxaCartao = service.ServicePrice * porcentagemCartao;
+
+            if(service.DescontarTaxaAntes == true)
+            {
+                service.TotalTaxas = service.DescontoToalha + service.DescontoProdutos + service.TaxaCartao;
+                service.NewServicePrice = service.ServicePrice - service.TotalTaxas;
+                service.ResultadoProfissional = service.NewServicePrice * porcentagemRateio;
+                service.ResultadoSalao = service.NewServicePrice - service.ResultadoProfissional;
+            }
+            else
+            {
+                service.ResultadoProfissional = service.ServicePrice * porcentagemRateio;
+                service.ResultadoProfissional = service.ResultadoProfissional - service.DescontoProdutos - service.DescontoToalha - service.TaxaCartao;
+                service.ResultadoSalao = service.ServicePrice - service.ResultadoProfissional;
+            }
+
+            return View("ResultService",service);
         }
     }
 }

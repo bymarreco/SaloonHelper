@@ -1,0 +1,45 @@
+@model SaloonHelper.ViewModel.ServicePriceCalculationViewModel
+
+@{
+    ViewData["Title"] = "Resultado";
+}
+
+<h1>Resultado</h1>
+
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label asp-for="ServicePrice">Valor do Serviço</label>
+            <input asp-for="ServicePrice" class="form-control" readonly="readonly" placeholder="Valor do serviço" value="@Model.ServicePrice"/>
+        </div>
+        <div class="form-group col-md-6">
+            <label>Rateio</label>
+            <input asp-for="Rateio" class="form-control" readonly="readonly" placeholder="Valor do Rateio" value="@Model.Rateio"/>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label>Taxa de Cartão</label>
+             <input asp-for="TaxaCartao" class="form-control" readonly="readonly" placeholder="Taxa de Cartão" value="@Model.TaxaCartao"/>
+        </div>
+        <div class="form-group col-md-4">
+            <label>Desconto Toalha</label>
+             <input asp-for="DescontoToalha" class="form-control" readonly="readonly" placeholder="Custo Com Toalhas" value="@Model.DescontoToalha"/>
+        </div>
+        <div class="form-group col-md-4">
+            <label>Desconto de Produtos</label>
+            <input asp-for="DescontoProdutos" class="form-control" readonly="readonly" placeholder="Custo com Produtos" value="@Model.DescontoProdutos"/>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label asp-for="ResultadoProfissional">Resultado do Profissional</label>
+            <input aspp-for="ResultadoProfissional" class="form-control" readonly="readonly" placeholder="Resultado do Profissional" value="@Model.ResultadoProfissional">
+        </div>
+        <div class="form-group col-md-6">
+            <label asp-for="ResultadoSalao">Resultado do Salao</label>
+            <input aspp-for="ResultadoSalao" class="form-control" readonly="readonly" placeholder="Resultado do Salao" value="@Model.ResultadoSalao">
+            <input aspp-for="DescontarCartaoAntes" class="form-control" readonly="readonly" placeholder="Resultado do Salao" value="@Model.DescontarTaxaAntes">
+        </div>
+    </div>
+</form>

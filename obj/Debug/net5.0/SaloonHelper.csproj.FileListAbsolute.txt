@@ -42,3 +42,4 @@ C:\Users\Marreco\Desktop\Exercicios-js\SaloonHelper\obj\Debug\net5.0\Razor\Views
 C:\Users\Marreco\Desktop\Exercicios-js\SaloonHelper\obj\Debug\net5.0\Razor\Views\Home\CompleteResult.cshtml.g.cs
 C:\Users\Marreco\Desktop\Exercicios-js\SaloonHelper\obj\Debug\net5.0\Razor\Views\Home\CalculateProduct.cshtml.g.cs
 C:\Users\Marreco\Desktop\Exercicios-js\SaloonHelper\obj\Debug\net5.0\Razor\Views\Home\CalculateService.cshtml.g.cs
+C:\Users\Marreco\Desktop\Exercicios-js\SaloonHelper\obj\Debug\net5.0\Razor\Views\Home\ResultService.cshtml.g.cs
